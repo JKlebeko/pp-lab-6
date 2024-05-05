@@ -2,6 +2,8 @@ package company.abstracts;
 
 import company.interfaces.Employable;
 
+import javax.management.ObjectInstance;
+
 
 public abstract class Employee implements Employable {
     private String name;
@@ -26,7 +28,7 @@ public abstract class Employee implements Employable {
     public double getSalary() {
         return salary;
     }
-8
+
     public String getPosition() {
         return position;
     }
@@ -37,5 +39,16 @@ public abstract class Employee implements Employable {
     public int hashCode() {
         return Integer.hashCode(id);
     }
+ //   public boolean equals(Object obj){
+//        return(obj.equals(null)|| this != obj?false:(this==obj||obj.hashCode()==this.hashCode()?true:false);
+
+    //    Employee employee = (Employee) obj;
+      //  return this.id == employee.id;
+
+public boolean equals(Object obj) {
+    if (obj==null||this != obj) {
+        return false;
+    }else return true;
+}
 
 }
