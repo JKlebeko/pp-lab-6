@@ -26,7 +26,7 @@ public abstract class Employee implements Employable {
     public double getSalary() {
         return salary;
     }
-
+8
     public String getPosition() {
         return position;
     }
