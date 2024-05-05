@@ -42,8 +42,6 @@ public abstract class Employee implements Employable {
  //   public boolean equals(Object obj){
 //        return(obj.equals(null)|| this != obj?false:(this==obj||obj.hashCode()==this.hashCode()?true:false);
 
-    //    Employee employee = (Employee) obj;
-      //  return this.id == employee.id;
 
 public boolean equals(Object obj) {
     if (obj==null||this != obj) {
