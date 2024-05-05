@@ -10,9 +10,15 @@ public class Main {
         Worker w4=new Worker("Jan",1200,4);
         Manager m1=new Manager("Jesper",15000,5);
         w1.work();
+        System.out.println(w1.getSalary());
         w2.work();
+        System.out.println(w2.getSalary());
         w3.work();
+        System.out.println(w3.getSalary());
         w4.work();
+        System.out.println(w4.getSalary());
         m1.work();
+        System.out.println(m1.getSalary());
+
     }
 }

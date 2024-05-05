@@ -7,8 +7,10 @@ public class Worker extends Employee {
         super(name, salary, id);
     }
 
+
+
     @Override
     public void work() {
-        System.out.println("Worker "+getName()+ " is working...");
+        System.out.println("Worker " + getName() + " is working...");
     }
 }
